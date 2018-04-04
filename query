@@ -8,7 +8,14 @@ echo "[
       { \"text\": \"Time\", \"type\": \"time\", \"sort\": true, \"desc\": true },
       { \"text\": \"foo\" }
     ],
-    \"rows\": [[$(( $(date +%s) * 1000 )),$RANDOM]],
+    \"rows\": [
+      [$(( $(date +%s) * 1000 - 5 )),$RANDOM],
+      [$(( $(date +%s) * 1000 - 4 )),$RANDOM],
+      [$(( $(date +%s) * 1000 - 3 )),$RANDOM],
+      [$(( $(date +%s) * 1000 - 2 )),$RANDOM],
+      [$(( $(date +%s) * 1000 - 1 )),$RANDOM],
+      [$(( $(date +%s) * 1000 )),$RANDOM],
+      ],
     \"type\": \"table\"
   }
 ]
