@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+printf "Content-type: application/json\n\n"
+
+echo "[
+  {
+    \"columns\": [
+      { \"text\": \"Time\", \"type\": \"time\", \"sort\": true, \"desc\": true },
+      { \"text\": \"alert_name\", \"type\":\"text\" }
+    ],
+    \"rows\": [[1522840162,\"foo\"]],
+    \"type\": \"table\"
+  }
+]
+"
+
