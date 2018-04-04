@@ -14,7 +14,7 @@ echo "[
       [$(( $(date +%s) * 1000 - 3 )),$RANDOM],
       [$(( $(date +%s) * 1000 - 2 )),$RANDOM],
       [$(( $(date +%s) * 1000 - 1 )),$RANDOM],
-      [$(( $(date +%s) * 1000 )),$RANDOM],
+      [$(( $(date +%s) * 1000 )),$RANDOM]
       ],
     \"type\": \"table\"
   }
